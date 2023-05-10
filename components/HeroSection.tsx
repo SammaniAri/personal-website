@@ -22,14 +22,14 @@ const HeroSection = () => {
 						Hej!
 					</h1>
 					<p className="text-lg mt-4 mb-6 md:text-2xl">
-						I&aposm Sammani,
+						I&#39;m Sammani,
 						<span className="font-semibold text-lime-800">
 							a keen future-Frontend
 							Developer.{" "}
 						</span>{" "}
 						I like to travel and try out
-						new food recipies when8
-						I&aposm not coding.{" "}
+						new food recipies when
+						I&#39;m not coding.{" "}
 					</p>
 					<Link
 						to="projects"
