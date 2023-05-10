@@ -8,11 +8,12 @@ const skills = [
 	{ skill: "Team Work" },
 	{ skill: "UX Fundamentals" },
 	{ skill: "Pair Programming" },
+	{ skill: "Communication Skills" },
 ];
 const AboutSection = () => {
 	return (
 		<section id="about">
-			<div className="my-12 pb-12 md:pt-16">
+			<div className="my-12 pb-12 md:pt-16 ">
 				<div>
 					<h1 className="text-center font-semibold text-4xl">
 						{" "}
@@ -25,18 +26,36 @@ const AboutSection = () => {
 							{" "}
 							Get to know me
 						</h1>
+
 						<p>
-							{" "}
-							I have a wide range of
-							hobbies and passions that
-							keep me busy. From
-							traveling, going shopping
-							to trying out new food
-							recipies, I am always
-							seeking new experiences
-							and love to keep myself
-							engaged in learning new
-							things.
+							I am a resilient, goal
+							oriented person who
+							believes in in life-long
+							education. With a passion
+							for technology and a
+							desire to continuously
+							grow, I am currently
+							studying Frontend
+							Development at Hyper
+							Island in Stockholm,
+							taking one step closer to
+							achieving my dream.
+						</p>
+						<br></br>
+						<p>
+							When I'm not glued to the
+							screen, I love traveling,
+							shopping, and
+							experimenting with new
+							food recipes. I'm always
+							up for new experiences and
+							I truly believe that
+							growth should never stop,
+							and that's what keeps me
+							going. I am excited to see
+							where my passion for
+							technology takes me in the
+							future.
 						</p>
 					</div>
 					<div className="md:w-1/2">
@@ -47,7 +66,9 @@ const AboutSection = () => {
 							{skills.map(
 								(item, idx) => {
 									return (
-										<p key={idx}>
+										<p
+											key={idx}
+											className="bg-lime-100 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold">
 											{item.skill}
 										</p>
 									);
