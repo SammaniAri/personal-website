@@ -28,13 +28,13 @@ const AboutSection = () => {
 						</h1>
 
 						<p>
-							I am a resilient, goal
+							I&#39;m a resilient, goal
 							oriented person who
 							believes in in life-long
 							education. With a passion
 							for technology and a
 							desire to continuously
-							grow, I am currently
+							grow, I&#39;m currently
 							studying Frontend
 							Development at Hyper
 							Island in Stockholm,
@@ -43,19 +43,19 @@ const AboutSection = () => {
 						</p>
 						<br></br>
 						<p>
-							When I'm not glued to the
-							screen, I love traveling,
-							shopping, and
+							When I&#39;m not glued to
+							the screen, I love
+							traveling, shopping, and
 							experimenting with new
-							food recipes. I'm always
-							up for new experiences and
-							I truly believe that
-							growth should never stop,
-							and that's what keeps me
-							going. I am excited to see
-							where my passion for
-							technology takes me in the
-							future.
+							food recipes. I&#39;m
+							always up for new
+							experiences and I truly
+							believe that growth should
+							never stop, and that&#39;s
+							what keeps me going. I am
+							excited to see where my
+							passion for technology
+							takes me in the future.
 						</p>
 					</div>
 					<div className="md:w-1/2">
