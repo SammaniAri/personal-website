@@ -22,7 +22,8 @@ const HeroSection = () => {
 						Hej!
 					</h1>
 					<p className="text-lg mt-4 mb-6 md:text-2xl">
-						I&#39;m Sammani,
+						I&#39;m Sammani,{" "}
+						<span></span>
 						<span className="font-semibold text-lime-800">
 							a keen future-Frontend
 							Developer.{" "}
