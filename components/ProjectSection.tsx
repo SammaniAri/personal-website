@@ -18,6 +18,8 @@ const projects = [
 		github:
 			"https://github.com/SammaniAri/react-app-g8",
 		link: "https://monakinft.vercel.app/",
+		technologies:
+			" React, Figjam, Next.Js, Sass, CSS, HTML ",
 	},
 	{
 		name: "A Simple Game inspired by Game of Thrones",
@@ -27,15 +29,19 @@ const projects = [
 		github:
 			"https://github.com/SammaniAri/react-app-g8",
 		link: "https://game-of-thrones-character-guessing.netlify.app/",
+		technologies:
+			" Vanilla JavaScript, CSS, HTML, Firebase ",
 	},
 	{
 		name: " To-do App",
 		description:
-			"Lorem ipsum dolor sit amet. Sed voluptates quia sed officia sint nam exercitationem velit est tempora reiciendis sed corrupti sunt ut eveniet repudiandae ut delectus internos. Aut quos architecto et vero facere et totam provident sit illum velit in perspiciatis autem et corrupti placeat et impedit illo?",
+			"I have developed a full-stack To-do App that allows users to perform various tasks. With this app, you can easily add new tasks, delete unnecessary ones, mark completed items, and read saved items.",
 		image: "/todo.jpg",
 		github:
 			"https://github.com/orgs/project-on-data-interaction/repositories",
 		link: " ",
+		technologies:
+			" Postgres, Node.js, Bootstrap, React ",
 	},
 ];
 
@@ -65,9 +71,14 @@ const ProjectSection = () => {
 												alt=""
 												width={1000}
 												height={1000}
-												className="rounded-xl shadow-xl hover:opacity-70"
+												className="rounded-xl shadow-xl hover:opacity-70 mb-8"
 											/>
 										</Link>
+										<p className="text-2xl leading-7 mb-4 mt-12 mb-8 text-neutral-600 dark:text-neutral-400 text-center rounded font-semibold bg-lime-100 shadow-xl">
+											{
+												project.technologies
+											}
+										</p>
 									</div>
 									<div className="md:w-1/2">
 										<h1 className="text-center text-2xl font-semibold mb-6 md:text-left">
