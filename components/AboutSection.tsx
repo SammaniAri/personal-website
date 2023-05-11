@@ -13,7 +13,7 @@ const skills = [
 const AboutSection = () => {
 	return (
 		<section id="about">
-			<div className="my-12 pb-12 md:pt-16 ">
+			<div className="my-12 pb-12 md:pt-16">
 				<div>
 					<h1 className="text-center font-semibold text-4xl">
 						{" "}
@@ -21,7 +21,7 @@ const AboutSection = () => {
 					</h1>
 				</div>
 				<div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-					<div className="md:w-1/2">
+					<div className="md:w-1/2 mt-12 ">
 						<h1 className="text-center text-2xl font-semibold mb-6 md:text-left">
 							{" "}
 							Get to know me
@@ -59,7 +59,7 @@ const AboutSection = () => {
 						</p>
 					</div>
 					<div className="md:w-1/2">
-						<h1 className="text-center text-2xl font-semibold mb-6 md:text-left">
+						<h1 className="text-center text-2xl font-semibold mb-6 md:text-left mt-12 ">
 							My skills
 						</h1>
 						<div className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">

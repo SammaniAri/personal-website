@@ -46,22 +46,28 @@ const ProjectSection = () => {
 				{" "}
 				Projects
 			</h1>
-			<div className="flex flex-col space-y-28">
+			<div className="flex flex-col space-y-28 mt-12">
 				{projects.map(
 					(project, idx) => {
 						return (
 							<div key={idx}>
 								<div className="flex flex-col md:flex-row md:space-x-12">
 									<div className="md:w-1/2">
-										<Image
-											src={
-												project.image
+										<Link
+											href={
+												project.link
 											}
-											alt=""
-											width={1000}
-											height={1000}
-											className="rounded-xl shadow-xl hover:opacity-70"
-										/>
+											target="_blank">
+											<Image
+												src={
+													project.image
+												}
+												alt=""
+												width={1000}
+												height={1000}
+												className="rounded-xl shadow-xl hover:opacity-70"
+											/>
+										</Link>
 									</div>
 									<div className="md:w-1/2">
 										<h1 className="text-center text-2xl font-semibold mb-6 md:text-left">
