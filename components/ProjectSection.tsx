@@ -13,7 +13,7 @@ const projects = [
 	{
 		name: "A single page web app",
 		description:
-			"Me and my team developed a single-page web application as part of a React course at the vocationalschool, using a Figma prototype as a basis. This project enabled me to acquire key competencies in React and Next.js, while paying attention to search engine optimization,responsiveness and acccebility achieving the learning outcomes of the course.",
+			"Me and my team developed a single-page web application as a part of a React course at the vocational school, using a Figma prototype as a basis. This project enabled me to acquire key competencies in React and Next.js, while paying attention to search engine optimization,responsiveness and acccebility achieving the learning outcomes of the course.",
 		image: "/photo.jpg",
 		github:
 			"https://github.com/SammaniAri/react-app-g8",
@@ -72,7 +72,28 @@ const ProjectSection = () => {
 												project.description
 											}
 										</p>
-										<div></div>
+										<div className="flex flex-row align-bottom space-x-4">
+											<Link
+												href={
+													project.github
+												}
+												target="_blank">
+												<BsGithub
+													size={30}
+													className="hover:-translate-y-1 transition-transform cursor-pointer"
+												/>
+											</Link>
+											<Link
+												href={
+													project.link
+												}
+												target="_blank">
+												<BsArrowRightSquare
+													size={30}
+													className="hover:-translate-y-1 transition-transform cursor-pointer"
+												/>
+											</Link>
+										</div>
 									</div>
 								</div>
 							</div>
