@@ -13,7 +13,7 @@ const projects = [
 	{
 		name: "A single page web app",
 		description:
-			"Me and my developed a single-page web application as part of a React course at the vocationalschool, using a Figma prototype as a basis. This project enabled me to acquire key competencies in React and Next.js, while paying attention to search engine optimization,responsiveness and acccebility achieving the learning outcomes of the course.",
+			"Me and my team developed a single-page web application as part of a React course at the vocationalschool, using a Figma prototype as a basis. This project enabled me to acquire key competencies in React and Next.js, while paying attention to search engine optimization,responsiveness and acccebility achieving the learning outcomes of the course.",
 		image: "/photo.jpg",
 		github:
 			"https://github.com/SammaniAri/react-app-g8",
@@ -40,7 +40,48 @@ const projects = [
 ];
 
 const ProjectSection = () => {
-	return <div>ProjectSection</div>;
+	return (
+		<section id="projects">
+			<h1 className="text-center font-semibold text-4xl">
+				{" "}
+				Projects
+			</h1>
+			<div className="flex flex-col space-y-28">
+				{projects.map(
+					(project, idx) => {
+						return (
+							<div key={idx}>
+								<div className="flex flex-col md:flex-row md:space-x-12">
+									<div className="md:w-1/2">
+										<Image
+											src={
+												project.image
+											}
+											alt=""
+											width={1000}
+											height={1000}
+											className="rounded-xl shadow-xl hover:opacity-70"
+										/>
+									</div>
+									<div className="md:w-1/2">
+										<h1 className="text-center text-2xl font-semibold mb-6 md:text-left">
+											{project.name}
+										</h1>
+										<p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+											{
+												project.description
+											}
+										</p>
+										<div></div>
+									</div>
+								</div>
+							</div>
+						);
+					}
+				)}
+			</div>
+		</section>
+	);
 };
 
 export default ProjectSection;

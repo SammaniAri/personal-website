@@ -27,7 +27,7 @@ const AboutSection = () => {
 							Get to know me
 						</h1>
 
-						<p>
+						<p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
 							I&#39;m a resilient, goal
 							oriented person who
 							believes in in life-long
@@ -42,7 +42,7 @@ const AboutSection = () => {
 							achieving my dream.
 						</p>
 						<br></br>
-						<p>
+						<p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
 							When I&#39;m not glued to
 							the screen, I love
 							traveling, shopping, and
@@ -62,7 +62,7 @@ const AboutSection = () => {
 						<h1 className="text-center text-2xl font-semibold mb-6 md:text-left">
 							My skills
 						</h1>
-						<div>
+						<div className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
 							{skills.map(
 								(item, idx) => {
 									return (

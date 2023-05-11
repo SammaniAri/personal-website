@@ -10,7 +10,7 @@ const HeroSection = () => {
 			<div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-8 md:text-left md:py-52">
 				<div className="md:w-1/2 md:mt-2">
 					<img
-						className="rounded-full shadow-2xl"
+						className="rounded-xl shadow-2xl"
 						src="/bike.jpg"
 						alt=""
 						width={400}
@@ -29,7 +29,7 @@ const HeroSection = () => {
 							Developer.{" "}
 						</span>{" "}
 						I like to travel and try out
-						new food recipies when
+						new food recipes when
 						I&#39;m not coding.{" "}
 					</p>
 					<Link
