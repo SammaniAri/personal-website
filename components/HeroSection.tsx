@@ -4,6 +4,23 @@ import React from "react";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
 
+const technology = [
+	{ technology: "Vanilla JavaScript" },
+	{ technology: "React" },
+	{ technology: "Next,Js" },
+	{ technology: "TypeScript" },
+	{
+		technology: "Sass",
+	},
+	{ technology: "CSS" },
+	{ technology: "Tailwind CSS" },
+	{ technology: "HTML" },
+	{ technology: "Firebase" },
+	{ technology: "Figma" },
+	{ technology: "Bootstrap" },
+	{ technology: "Typescript" },
+	{ technology: " Postgres" },
+];
 const HeroSection = () => {
 	return (
 		<section id="Home">
@@ -33,7 +50,7 @@ const HeroSection = () => {
 						I&#39;m not coding.{" "}
 					</p>
 					<Link
-						to="projects"
+						to="Projects"
 						className="text-neutral-100 font-semibold px-6 py-3 bg-lime-600 rounded shadow hover:bg-lime-700"
 						activeClass="active"
 						spy={true}
@@ -43,11 +60,27 @@ const HeroSection = () => {
 						{" "}
 						Projects
 					</Link>
+					<div>
+						<h1 className="text-center text-2xl font-semibold mb-6 md:text-left mt-12 "></h1>
+						<div className="flex flex-wrap md:flex-row text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+							{technology.map(
+								(item, idx) => {
+									return (
+										<p
+											key={idx}
+											className="bg-lime-100 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold">
+											{item.technology}
+										</p>
+									);
+								}
+							)}
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className="flex flex-row justify-center animate-bounce">
 				<Link
-					to="about"
+					to="About"
 					activeClass="active"
 					spy={true}
 					smooth={true}

@@ -9,6 +9,8 @@ const skills = [
 	{ skill: "UX Fundamentals" },
 	{ skill: "Pair Programming" },
 	{ skill: "Communication Skills" },
+	{ skill: " VS Code" },
+	{ skill: " GitHub" },
 ];
 const AboutSection = () => {
 	return (
