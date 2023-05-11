@@ -3,6 +3,7 @@
 "use client";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import Footer from "@/components/Footer";
 import ProjectSection from "@/components/ProjectSection";
 export default function Home() {
 	return (
@@ -10,6 +11,7 @@ export default function Home() {
 			<HeroSection />
 			<AboutSection />
 			<ProjectSection />
+			<Footer />
 		</main>
 	);
 }
