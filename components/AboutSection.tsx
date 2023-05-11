@@ -12,7 +12,7 @@ const skills = [
 ];
 const AboutSection = () => {
 	return (
-		<section id="about">
+		<section id="About">
 			<div className="my-12 pb-12 md:pt-16">
 				<div>
 					<h1 className="text-center font-semibold text-4xl">
