@@ -48,75 +48,78 @@ const projects = [
 const ProjectSection = () => {
 	return (
 		<section id="Projects">
-			<h1 className="text-center font-semibold text-4xl">
+			<div className="text-lime-950">
 				{" "}
-				Projects
-			</h1>
-			<div className="flex flex-col space-y-28 mt-12">
-				{projects.map(
-					(project, idx) => {
-						return (
-							<div key={idx}>
-								<div className="flex flex-col md:flex-row md:space-x-12">
-									<div className="md:w-1/2">
-										<Link
-											href={
-												project.link
-											}
-											target="_blank">
-											<Image
-												src={
-													project.image
-												}
-												alt=""
-												width={1000}
-												height={1000}
-												className="rounded-xl shadow-xl hover:opacity-70 mb-8"
-											/>
-										</Link>
-										<p className="text-2xl leading-7 mb-4 mt-12 mb-8 text-neutral-600 dark:text-neutral-400 text-center rounded font-semibold bg-lime-100 shadow-xl">
-											{
-												project.technologies
-											}
-										</p>
-									</div>
-									<div className="md:w-1/2">
-										<h1 className="text-center text-2xl font-semibold mb-6 md:text-left">
-											{project.name}
-										</h1>
-										<p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-											{
-												project.description
-											}
-										</p>
-										<div className="flex flex-row align-bottom space-x-4">
-											<Link
-												href={
-													project.github
-												}
-												target="_blank">
-												<BsGithub
-													size={30}
-													className="hover:-translate-y-1 transition-transform cursor-pointer"
-												/>
-											</Link>
+				<h1 className="text-center font-semibold text-4xl text-lime-950">
+					{" "}
+					Projects
+				</h1>
+				<div className="flex flex-col space-y-28 mt-12">
+					{projects.map(
+						(project, idx) => {
+							return (
+								<div key={idx}>
+									<div className="flex flex-col md:flex-row md:space-x-12">
+										<div className="md:w-1/2">
 											<Link
 												href={
 													project.link
 												}
 												target="_blank">
-												<BsArrowRightSquare
-													size={30}
-													className="hover:-translate-y-1 transition-transform cursor-pointer"
+												<Image
+													src={
+														project.image
+													}
+													alt=""
+													width={1000}
+													height={1000}
+													className="rounded-xl shadow-xl hover:opacity-70 mb-8"
 												/>
 											</Link>
+											<p className="text-2xl leading-7 mb-4 mt-12 mb-8 text-neutral-600 dark:text-neutral-400 text-center rounded font-semibold bg-lime-100 shadow-xl">
+												{
+													project.technologies
+												}
+											</p>
+										</div>
+										<div className="md:w-1/2">
+											<h1 className="text-center text-2xl font-semibold mb-6 md:text-left">
+												{project.name}
+											</h1>
+											<p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+												{
+													project.description
+												}
+											</p>
+											<div className="flex flex-row align-bottom space-x-4">
+												<Link
+													href={
+														project.github
+													}
+													target="_blank">
+													<BsGithub
+														size={30}
+														className="hover:-translate-y-1 transition-transform cursor-pointer"
+													/>
+												</Link>
+												<Link
+													href={
+														project.link
+													}
+													target="_blank">
+													<BsArrowRightSquare
+														size={30}
+														className="hover:-translate-y-1 transition-transform cursor-pointer"
+													/>
+												</Link>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						);
-					}
-				)}
+							);
+						}
+					)}
+				</div>
 			</div>
 		</section>
 	);
