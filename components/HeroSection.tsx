@@ -3,6 +3,8 @@
 import React from "react";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
+import AnimatedFont from "./AnimatedFont";
+import { motion } from "framer-motion";
 
 const technology = [
 	{ technology: "Vanilla JavaScript" },
@@ -35,10 +37,13 @@ const HeroSection = () => {
 					/>
 				</div>
 				<div className="md:w-3/5 md:mt-2 text-lime-950">
-					<h1 className="text-4xl mt-6 md:mt-0 md:text-7xl">
-						Hej!
-					</h1>
-					<p className="text-lg mt-4 mb-6 md:text-2xl">
+					<div className="text-4xl mt-6 md:mt-0 md:text-7xl my-5">
+						<AnimatedFont
+							text={"Hej!"}
+						/>
+					</div>
+
+					<p className="text-lg mt-4 mb-6 md:text-2xl my-5">
 						I&#39;m Sammani,{" "}
 						<span></span>
 						<span className="font-semibold text-lime-800">
@@ -61,7 +66,10 @@ const HeroSection = () => {
 						Projects
 					</Link>
 					<div>
-						<h1 className="text-center text-2xl font-semibold mb-6 md:text-left mt-12 "></h1>
+						<h1 className="text-center text-2xl font-semibold mb-6 md:text-left mt-12 ml-1">
+							{" "}
+							My Skills
+						</h1>
 						<div className="flex flex-wrap md:flex-row text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
 							{technology.map(
 								(item, idx) => {
