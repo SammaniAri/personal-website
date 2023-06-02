@@ -8,6 +8,7 @@ import { ThemeProvider } from "next-themes";
 import { tsParticles } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 import Particles from "react-particles";
+import { motion } from "framer-motion";
 import { useCallback } from "react";
 import type {
 	Container,
