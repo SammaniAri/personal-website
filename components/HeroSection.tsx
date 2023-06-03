@@ -38,9 +38,7 @@ const HeroSection = () => {
 				</div>
 				<div className="md:w-3/5 md:mt-2 text-lime-950">
 					<div className="text-4xl mt-6 md:mt-0 md:text-7xl my-5">
-						<AnimatedFont
-							text={"Hej!"}
-						/>
+						Hej
 					</div>
 
 					<p className="text-lg mt-4 mb-6 md:text-2xl my-5">
