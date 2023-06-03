@@ -4,6 +4,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AnimatedFont from "./AnimatedFont";
 import {
 	BsGithub,
 	BsArrowRightSquare,
@@ -48,11 +49,14 @@ const projects = [
 const ProjectSection = () => {
 	return (
 		<section id="Projects">
-			<div className="text-lime-950">
+			<div className="text-lime-950 ">
 				{" "}
-				<h1 className="text-center font-semibold text-4xl text-lime-950">
+				<h1 className="text-center font-semibold text-4xl text-lime-950 ">
 					{" "}
 					Projects
+					<AnimatedFont
+						text={"Projects"}
+					/>
 				</h1>
 				<div className="flex flex-col space-y-28 mt-12">
 					{projects.map(

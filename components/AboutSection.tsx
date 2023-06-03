@@ -2,6 +2,7 @@
 
 "use client";
 import React from "react";
+import AnimatedFont from "./AnimatedFont";
 
 const skills = [
 	{ skill: "Agile Methodology" },
@@ -16,10 +17,13 @@ const AboutSection = () => {
 	return (
 		<section id="About">
 			<div className="my-12 pb-12 md:pt-16">
-				<div>
-					<h1 className="text-lime-950 text-center font-semibold text-4xl">
+				<div className="text-lime-950 text-center font-semibold text-4xl">
+					<h1 className="text-lime-950 text-center font-semibold text-4xl ">
 						{" "}
 						About Me
+						<AnimatedFont
+							text={"About  Me"}
+						/>
 					</h1>
 				</div>
 				<div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
