@@ -54,31 +54,43 @@ const HeroSection = () => {
 						new food recipes when
 						I&#39;m not coding.{" "}
 					</p>
-					<Link
-						to="Projects"
-						className="text-neutral-100 font-semibold px-6 py-3 bg-lime-600 rounded shadow hover:bg-lime-700"
-						activeClass="active"
-						spy={true}
-						smooth={true}
-						offset={-100}
-						duration={500}>
-						{" "}
-						Projects
-					</Link>
-					<div>
-						<h1 className="text-center text-2xl font-semibold mb-6 md:text-left mt-12 ml-1">
+					<div className="my-8">
+						<Link
+							to="Projects"
+							className="text-neutral-100 font-semibold px-6 py-3 bg-lime-600 rounded shadow hover:bg-lime-700"
+							activeClass="active"
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={500}>
 							{" "}
-							My Skills
-						</h1>
+							Projects
+						</Link>
+					</div>
+
+					<div>
 						<div className="flex flex-wrap md:flex-row text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
 							{technology.map(
 								(item, idx) => {
 									return (
-										<p
+										<motion.div
 											key={idx}
+											initial={{
+												opacity: 0,
+												translateY: 50,
+											}}
+											animate={{
+												opacity: 1,
+												translateY: 0,
+											}}
+											transition={{
+												duration: 1.5,
+												delay:
+													idx * 0.2,
+											}}
 											className="bg-lime-100 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold">
 											{item.technology}
-										</p>
+										</motion.div>
 									);
 								}
 							)}
