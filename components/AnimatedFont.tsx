@@ -43,6 +43,7 @@ const AnimatedFont = ({ text }) => {
 			style={{
 				//overflow: "hidden",
 				display: "flex",
+				justifyContent: "center",
 			}}
 			variants={container}
 			initial="hidden"
