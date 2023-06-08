@@ -64,8 +64,8 @@ const AnimatedFont = ({ text }) => {
 				justifyContent: "center",
 			}}
 			initial={container.hidden}
-			viewport={{ amount: 0.8 }}
-			whileInView={container.visible}>
+			whileInView={container.visible}
+			viewport={{ amount: 0.8 }}>
 			{" "}
 			{letters.map(
 				(
@@ -73,8 +73,11 @@ const AnimatedFont = ({ text }) => {
 					index: number
 				) => (
 					<motion.span
-						initial={child.hidden}
-						whileInView={child.visible}
+						initial={container.hidden}
+						whileInView={
+							container.visible
+						}
+						viewport={{ amount: 0.8 }}
 						style={{
 							marginRight: "5px",
 						}}
