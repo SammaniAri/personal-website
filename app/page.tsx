@@ -1,6 +1,6 @@
 /** @format */
 
-"use client";
+"use strict";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";

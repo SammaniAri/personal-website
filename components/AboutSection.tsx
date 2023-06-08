@@ -20,7 +20,6 @@ const AboutSection = () => {
 				<div className="text-lime-950 text-center font-semibold text-4xl">
 					<h1 className="text-lime-950 text-center font-semibold text-4xl ">
 						{" "}
-						About Me
 						<AnimatedFont
 							text={"About  Me"}
 						/>

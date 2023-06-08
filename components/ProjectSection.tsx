@@ -51,9 +51,8 @@ const ProjectSection = () => {
 		<section id="Projects">
 			<div className="text-lime-950 ">
 				{" "}
-				<h1 className="text-center font-semibold text-4xl text-lime-950 ">
+				<h1 className=" text-center font-semibold text-4xl text-lime-950 ">
 					{" "}
-					Projects
 					<AnimatedFont
 						text={"Projects"}
 					/>
