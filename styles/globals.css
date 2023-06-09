@@ -7,3 +7,29 @@
 body {
 	background-color: #f7fee7;
 }
+.helper {
+	height: 100vh;
+	background-color: #b2cc4c;
+}
+.char {
+	transform: translateY(-115px);
+	transition: transform 0.2s;
+}
+#my-text1 {
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 100%,
+		0% 100%
+	);
+	line-height: 5.9rem;
+}
+#my-text2 {
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 100%,
+		0% 100%
+	);
+	line-height: 5.9rem;
+}

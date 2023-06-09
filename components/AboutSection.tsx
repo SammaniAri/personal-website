@@ -2,8 +2,14 @@
 
 "use client";
 import React from "react";
-import AnimatedFont from "./AnimatedFont";
+import { gsap } from "gsap";
 
+import SplitType from "split-type";
+
+import {
+	useRef,
+	useEffect,
+} from "react";
 const skills = [
 	{ skill: "Agile Methodology" },
 	{ skill: "Team Work" },
@@ -13,16 +19,34 @@ const skills = [
 	{ skill: " VS Code" },
 	{ skill: " GitHub" },
 ];
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 const AboutSection = () => {
+	const fontRef = useRef(null);
+	useEffect(() => {
+		const el = fontRef.current;
+		const myText = new SplitType(
+			"#my-text1"
+		);
+		gsap.to(".char", {
+			y: 0,
+			stagger: 0.25,
+			delay: 0.3,
+			duration: 1.5,
+			scrollTrigger: { trigger: el },
+		});
+	}, []);
 	return (
 		<section id="About">
 			<div className="my-12 pb-12 md:pt-16">
 				<div className="text-lime-950 text-center font-semibold text-4xl">
 					<h1 className="text-lime-950 text-center font-semibold text-4xl ">
 						{" "}
-						<AnimatedFont
-							text={"About  Me"}
-						/>
+						<div
+							id="my-text1"
+							ref={fontRef}>
+							About Me
+						</div>
 					</h1>
 				</div>
 				<div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
