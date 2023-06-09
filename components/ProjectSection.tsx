@@ -2,13 +2,21 @@
 
 "use client";
 import React from "react";
+import { gsap } from "gsap";
 import Image from "next/image";
 import Link from "next/link";
-import AnimatedFont from "./AnimatedFont";
+import SplitType from "split-type";
+import {
+	useRef,
+	useEffect,
+} from "react";
 import {
 	BsGithub,
 	BsArrowRightSquare,
 } from "react-icons/bs";
+
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
 	{
@@ -47,15 +55,31 @@ const projects = [
 ];
 
 const ProjectSection = () => {
+	const fontRef = useRef(null);
+	useEffect(() => {
+		const el = fontRef.current;
+		const myText = new SplitType(
+			"#my-text"
+		);
+		gsap.to(".char", {
+			y: 0,
+			stagger: 0.5,
+			delay: 0.2,
+			duration: 1.5,
+			scrollTrigger: { trigger: el },
+		});
+	}, []);
 	return (
 		<section id="Projects">
 			<div className="text-lime-950 ">
 				{" "}
 				<h1 className=" text-center font-semibold text-4xl text-lime-950 ">
 					{" "}
-					<AnimatedFont
-						text={"Projects"}
-					/>
+					<div
+						id="my-text"
+						ref={fontRef}>
+						Projects
+					</div>
 				</h1>
 				<div className="flex flex-col space-y-28 mt-12">
 					{projects.map(
