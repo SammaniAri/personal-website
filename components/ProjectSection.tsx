@@ -59,12 +59,12 @@ const ProjectSection = () => {
 	useEffect(() => {
 		const el = fontRef.current;
 		const myText = new SplitType(
-			"#my-text"
+			"#my-text2"
 		);
 		gsap.to(".char", {
 			y: 0,
-			stagger: 0.5,
-			delay: 0.2,
+			stagger: 0.25,
+			delay: 0.3,
 			duration: 1.5,
 			scrollTrigger: { trigger: el },
 		});
@@ -76,7 +76,7 @@ const ProjectSection = () => {
 				<h1 className=" text-center font-semibold text-4xl text-lime-950 ">
 					{" "}
 					<div
-						id="my-text"
+						id="my-text2"
 						ref={fontRef}>
 						Projects
 					</div>
