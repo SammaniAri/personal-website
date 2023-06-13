@@ -24,6 +24,12 @@ const technology = [
 	{ technology: " Postgres" },
 ];
 const HeroSection = () => {
+	let audio = new Audio("/button.mp3");
+
+	const handleClick = () => {
+		console.log("hello world");
+		audio.play();
+	};
 	return (
 		<section id="Home">
 			<div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-8 md:text-left md:py-52">
@@ -54,6 +60,7 @@ const HeroSection = () => {
 					</p>
 					<div className="my-8">
 						<Link
+							onClick={handleClick}
 							to="Projects"
 							className="text-neutral-100 font-semibold px-6 py-3 bg-lime-600 rounded shadow hover:bg-lime-700"
 							activeClass="active"
@@ -98,6 +105,7 @@ const HeroSection = () => {
 			</div>
 			<div className="flex flex-row justify-center animate-bounce">
 				<Link
+					onClick={handleClick}
 					to="About"
 					activeClass="active"
 					spy={true}
