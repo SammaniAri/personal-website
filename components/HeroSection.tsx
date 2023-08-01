@@ -5,6 +5,7 @@ import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
 import AnimatedFont from "./AnimatedFont";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const technology = [
 	{ technology: "Vanilla JavaScript" },
@@ -24,11 +25,13 @@ const technology = [
 	{ technology: " Postgres" },
 ];
 const HeroSection = () => {
-	let audio = new Audio("/button.mp3");
+	let audio = useRef(
+		new Audio("/button.mp3")
+	);
 
 	const handleClick = () => {
 		console.log("hello world");
-		audio.play();
+		audio.current.play();
 	};
 	return (
 		<section id="Home">
