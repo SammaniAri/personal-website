@@ -20,16 +20,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
 	{
-		name: "A single page web app",
+		name: "An e-commerce web app",
 		description:
-			"Me and my team developed a single-page web application as a part of a React course at the vocational school, using a Figma prototype as a basis. This project enabled me to acquire key competencies in React and Next.js, while paying attention to search engine optimization,responsiveness and acccebility achieving the learning outcomes of the course.",
-		image: "/singlepage.jpg",
+			"I developed a single-page web application as an assessment for the last course at the vocational school, using a Canva prototype as a basis. This project enabled me to acquire key competencies in Vue.js and Vuetify. The app is responsive and acccebile and I achived the learning outcomes of the course through making this App.",
+		image: "/ecommerce.jpg",
 		github:
-			"https://github.com/SammaniAri/react-app-g8",
-		link: "https://monakinft.vercel.app/",
-		technologies:
-			" React  Figjam  Next.Js  Sass  CSS  HTML ",
+			"https://github.com/SammaniAri/ecommerce",
+		link: "https://ecommerce-five-drab.vercel.app/",
+		technologies: " Vue.js Vuetify",
 	},
+
 	{
 		name: "A Simple Game inspired by Game of Thrones",
 		description:
@@ -51,6 +51,17 @@ const projects = [
 		link: " ",
 		technologies:
 			" Postgres Node.js  Bootstrap  React ",
+	},
+	{
+		name: "A single page web app",
+		description:
+			"Me and my team developed a single-page web application as a part of a React course at the vocational school, using a Figma prototype as a basis. This project enabled me to acquire key competencies in React and Next.js, while paying attention to search engine optimization,responsiveness and acccebility achieving the learning outcomes of the course.",
+		image: "/singlepage.jpg",
+		github:
+			"https://github.com/SammaniAri/react-app-g8",
+		link: "https://monakinft.vercel.app/",
+		technologies:
+			" React  Figjam  Next.Js  Sass  CSS  HTML ",
 	},
 ];
 
