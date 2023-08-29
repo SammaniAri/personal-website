@@ -22,7 +22,7 @@ const projects = [
 	{
 		name: "An e-commerce web app",
 		description:
-			"I developed a single-page web application as an assessment for the last course at the vocational school, using a Canva prototype as a basis. This project enabled me to acquire key competencies in Vue.js and Vuetify. The app is responsive and acccebile and I achived the learning outcomes of the course through making this App.",
+			"I developed a single-page web application as an assessment for the last course at the vocational school, using a Canva prototype as a basis. This project enabled me to acquire key competencies in Vue.js and Vuetify. The app is responsive and  accessible and I achived the learning outcomes of the course through making this App.",
 		image: "/ecommerce.jpg",
 		github:
 			"https://github.com/SammaniAri/ecommerce",
