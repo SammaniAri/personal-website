@@ -41,17 +41,7 @@ const projects = [
 		technologies:
 			" Vanilla JavaScript  CSS  HTML  Firebase ",
 	},
-	{
-		name: " To-do App",
-		description:
-			"I have developed a full stack To do App that allows users to perform various tasks. With this app, you can easily add new tasks, delete unnecessary ones, mark completed items, and read saved items.",
-		image: "/todo.jpg",
-		github:
-			"https://github.com/orgs/project-on-data-interaction/repositories",
-		link: " ",
-		technologies:
-			" Postgres Node.js  Bootstrap  React ",
-	},
+
 	{
 		name: "A single page web app",
 		description:
