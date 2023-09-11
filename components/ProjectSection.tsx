@@ -26,7 +26,7 @@ const projects = [
 		image: "/ecommerce.jpg",
 		github:
 			"https://github.com/SammaniAri/ecommerce",
-		link: "https://ecommerce-five-drab.vercel.app/",
+		link: "https://ecommerce-jewellery.vercel.app/",
 		technologies: " Vue.js Vuetify",
 	},
 
