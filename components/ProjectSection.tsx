@@ -22,12 +22,13 @@ const projects = [
 	{
 		name: "An e-commerce web app",
 		description:
-			"I developed a single-page web application as an assessment for the last course at the vocational school, using a Canva prototype as a basis. This project enabled me to acquire key competencies in Vue.js and Vuetify. The app is responsive and  accessible and I achived the learning outcomes of the course through making this App.",
-		image: "/ecommerce.jpg",
+			"I Developed a responsive e-commerce platform optimized for mobile devices,featuring dynamic UI for product listings, orders, and user profiles. Implemented state management and integrated secure authentication to enhance userexperience. Achieved cross-device compatibility and user interface responsiveness. Practised state management, responsive design, and Firebase's real-time capabilities for backend services.",
+		image: "/pizza.jpg",
 		github:
-			"https://github.com/SammaniAri/ecommerce",
-		link: "https://ecommerce-jewellery.vercel.app/",
-		technologies: " Vue.js Vuetify",
+			"https://github.com/SammaniAri/PizzaRestaurant",
+		link: "https://react-pizza-restaurant-vert.vercel.app/",
+		technologies:
+			" React, Firebase, Firestore, Tailwind CSS, Vercel",
 	},
 
 	{
