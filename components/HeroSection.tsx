@@ -41,7 +41,7 @@ const HeroSection = () => {
 	};
 	return (
 		<section id="Home">
-			<div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-8 md:text-left md:py-52">
+			<div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-8 md:text-left">
 				<div className="md:w-1/2 md:mt-2">
 					<img
 						className="rounded-xl shadow-2xl"

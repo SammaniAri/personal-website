@@ -105,7 +105,7 @@ const ProjectSection = () => {
 													className="rounded-xl shadow-xl hover:opacity-70 mb-8"
 												/>
 											</Link>
-											<p className="text-2xl leading-7 mb-4 mt-12 mb-8 text-neutral-600 dark:text-neutral-400 text-center rounded font-semibold bg-lime-100 shadow-xl">
+											<p className="text-2xl leading-7 mt-12 mb-8 text-neutral-600 dark:text-neutral-400 text-center rounded font-semibold bg-lime-100 shadow-xl">
 												{
 													project.technologies
 												}
