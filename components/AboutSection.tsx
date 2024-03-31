@@ -25,9 +25,7 @@ const AboutSection = () => {
 	const fontRef = useRef(null);
 	useEffect(() => {
 		const el = fontRef.current;
-		const myText = new SplitType(
-			"#my-text1"
-		);
+
 		gsap.to(".char", {
 			y: 0,
 			stagger: 0.25,
