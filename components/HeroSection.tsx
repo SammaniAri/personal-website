@@ -14,7 +14,8 @@ import {
 const technology = [
 	{ technology: "Vanilla JavaScript" },
 	{ technology: "React" },
-	{ technology: "Next,Js" },
+	{ technology: "Next.Js" },
+	{ technology: "Vue" },
 	{ technology: "TypeScript" },
 	{
 		technology: "Sass",
@@ -25,8 +26,10 @@ const technology = [
 	{ technology: "Firebase" },
 	{ technology: "Figma" },
 	{ technology: "Bootstrap" },
+	{ technology: "Vuetify" },
 	{ technology: "Typescript" },
-	{ technology: " Postgres" },
+	{ technology: " PostgreSQL" },
+	{ technology: "Swell" },
 ];
 const HeroSection = () => {
 	const [audio, setAudio] =
@@ -60,7 +63,7 @@ const HeroSection = () => {
 						I&#39;m Sammani,{" "}
 						<span></span>
 						<span className="font-semibold text-lime-800">
-							a keen future-Frontend
+							a freshly baked Frontend
 							Developer.{" "}
 						</span>{" "}
 						I like to travel and try out

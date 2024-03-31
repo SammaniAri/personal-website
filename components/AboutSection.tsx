@@ -67,11 +67,11 @@ const AboutSection = () => {
 								&nbsp;
 							</span>
 							With a passion for
-							technology and a desire to
-							continuously grow, I&#39;m
-							currently studying
-							Frontend Development at
-							Hyper Island in Stockholm,
+							technology and a desire
+							for continuous growth, I
+							recently graduated from
+							Hyper Island in Stockholm
+							as a Frontend Developer,
 							taking one step closer to
 							achieving my dream.
 						</p>

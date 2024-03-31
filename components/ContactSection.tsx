@@ -15,7 +15,6 @@ const ContactSection = () => {
 				action="https://formspree.io/f/mbjngadw"
 				method="POST">
 				<div className="mx-4 my-4">
-					{" "}
 					<label
 						htmlFor="name"
 						className="block text-sm font-medium text-black">
@@ -23,7 +22,7 @@ const ContactSection = () => {
 					</label>
 					<input
 						name="name"
-						className="mt-1 text-black block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-lime-700 focus:border-lime-700 sm:text-sm"></input>{" "}
+						className="mt-1 text-black block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-lime-700 focus:border-lime-700 sm:text-sm"></input>
 				</div>
 				<div className="mx-4 my-4">
 					<label
@@ -33,24 +32,7 @@ const ContactSection = () => {
 					</label>
 					<input
 						name="email"
-						className="mt-1 text-black block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-lime-700 focus:border-lime-700 sm:text-sm"></input>{" "}
-				</div>
-				<div className="mx-4 my-4">
-					<label
-						htmlFor="message"
-						className="block text-sm font-medium text-black">
-						Message:
-					</label>
-					<textarea
-						name="message"
-						className="mt-1 text-black block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-lime-700 focus:border-lime-700 sm:text-sm"
-						rows={6}
-						cols={50}></textarea>{" "}
-				</div>
-				<div className="mx-4 my-4">
-					<button className="text-neutral-100 font-semibold my-6 px-6 py-3 bg-lime-600 rounded shadow hover:bg-lime-700 w-40">
-						Submit
-					</button>{" "}
+						className="mt-1 text-black block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-lime-700 focus:border-lime-700 sm:text-sm"></input>
 				</div>
 			</form>
 		</div>

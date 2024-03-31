@@ -42,7 +42,16 @@ const projects = [
 		technologies:
 			" Vanilla JavaScript  CSS  HTML  Firebase ",
 	},
-
+	{
+		name: "An e-commerce web app built in Vue.js",
+		description:
+			"I developed a single-page web application as an assessment for the last course at the vocational school, using a Canva prototype as a basis. This project enabled me to acquire key competencies in Vue.js and Vuetify. The app is responsive and acccebile and I achived the learning outcomes of the course through making this App.",
+		image: "/ecommerce.jpg",
+		github:
+			"https://github.com/SammaniAri/ecommerce",
+		link: "https://ecommerce-jewellery.vercel.app/",
+		technologies: " Vue.js Vuetify ",
+	},
 	{
 		name: "A single page web app",
 		description:
@@ -53,6 +62,17 @@ const projects = [
 		link: "https://monakinft.vercel.app/",
 		technologies:
 			" React  Figjam  Next.Js  Sass  CSS  HTML ",
+	},
+	{
+		name: "A to-do app",
+		description:
+			"As part of a data interaction course at the vocational school, I successfully completed my first Full Stack project by developing a To-Do application. For the frontend development, I utilized React and Bootstrap to create a modern and intuitive user interface. On the backend, I used Express.js and Node.js to build a server-side application. These technologies enabled me to handle routing, API endpoints, and data management, ensuring communication between the frontend and backend components. For data storage, I used PostgreSQL.",
+		image: "/todo.jpg",
+		github:
+			"https://github.com/orgs/project-on-data-interaction/repositories",
+		link: "",
+		technologies:
+			" Express.js, Node.js, Bootstrap, PostgreSQL ",
 	},
 ];
 
@@ -90,7 +110,7 @@ const ProjectSection = () => {
 								<div key={idx}>
 									<div className="flex flex-col md:flex-row md:space-x-12">
 										<div className="md:w-1/2">
-											<Link
+											{/*	<Link
 												href={
 													project.link
 												}
@@ -104,7 +124,41 @@ const ProjectSection = () => {
 													height={1000}
 													className="rounded-xl shadow-xl hover:opacity-70 mb-8"
 												/>
-											</Link>
+											</Link>  */}
+											{project.link ? (
+												<Link
+													href={
+														project.link
+													}
+													target="_blank">
+													<Image
+														src={
+															project.image
+														}
+														alt={
+															project.name
+														}
+														width={1000}
+														height={
+															1000
+														}
+														className="rounded-xl shadow-xl hover:opacity-70 mb-8"
+													/>
+												</Link>
+											) : (
+												<Image
+													src={
+														project.image
+													}
+													alt={
+														project.name
+													}
+													width={1000}
+													height={1000}
+													className="rounded-xl shadow-xl mb-8"
+												/>
+											)}
+
 											<p className="text-2xl leading-7 mt-12 mb-8 text-neutral-600 dark:text-neutral-400 text-center rounded font-semibold bg-lime-100 shadow-xl">
 												{
 													project.technologies
@@ -131,16 +185,19 @@ const ProjectSection = () => {
 														className="hover:-translate-y-1 transition-transform cursor-pointer"
 													/>
 												</Link>
-												<Link
-													href={
-														project.link
-													}
-													target="_blank">
-													<BsArrowRightSquare
-														size={30}
-														className="hover:-translate-y-1 transition-transform cursor-pointer"
-													/>
-												</Link>
+
+												{project.link && (
+													<Link
+														href={
+															project.link
+														}
+														target="_blank">
+														<BsArrowRightSquare
+															size={30}
+															className="hover:-translate-y-1 transition-transform cursor-pointer"
+														/>
+													</Link>
+												)}
 											</div>
 										</div>
 									</div>
