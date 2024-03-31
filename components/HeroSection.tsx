@@ -14,7 +14,8 @@ import {
 const technology = [
 	{ technology: "Vanilla JavaScript" },
 	{ technology: "React" },
-	{ technology: "Next,Js" },
+	{ technology: "Next.Js" },
+	{ technology: "Vue" },
 	{ technology: "TypeScript" },
 	{
 		technology: "Sass",
@@ -25,8 +26,10 @@ const technology = [
 	{ technology: "Firebase" },
 	{ technology: "Figma" },
 	{ technology: "Bootstrap" },
+	{ technology: "Vuetify" },
 	{ technology: "Typescript" },
-	{ technology: " Postgres" },
+	{ technology: " PostgreSQL" },
+	{ technology: "Swell" },
 ];
 const HeroSection = () => {
 	const [audio, setAudio] =
@@ -41,7 +44,7 @@ const HeroSection = () => {
 	};
 	return (
 		<section id="Home">
-			<div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-8 md:text-left md:py-52">
+			<div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-8 md:text-left">
 				<div className="md:w-1/2 md:mt-2">
 					<img
 						className="rounded-xl shadow-2xl"
@@ -60,7 +63,7 @@ const HeroSection = () => {
 						I&#39;m Sammani,{" "}
 						<span></span>
 						<span className="font-semibold text-lime-800">
-							a keen future-Frontend
+							a freshly baked Frontend
 							Developer.{" "}
 						</span>{" "}
 						I like to travel and try out
