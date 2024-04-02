@@ -33,3 +33,21 @@ body {
 	);
 	line-height: 5.9rem;
 }
+#my-text3 {
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 100%,
+		0% 100%
+	);
+	line-height: 5.9rem;
+}
+#my-text4 {
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 100%,
+		0% 100%
+	);
+	line-height: 5.9rem;
+}

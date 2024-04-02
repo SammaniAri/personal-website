@@ -3,8 +3,8 @@
 "use client";
 import React from "react";
 import { gsap } from "gsap";
-
 import SplitType from "split-type";
+import { ScrollTrigger } from "gsap/all";
 
 import {
 	useRef,
@@ -19,14 +19,14 @@ const skills = [
 	{ skill: " VS Code" },
 	{ skill: " GitHub" },
 ];
-import { ScrollTrigger } from "gsap/all";
+
 gsap.registerPlugin(ScrollTrigger);
 const AboutSection = () => {
 	const fontRef = useRef(null);
 	useEffect(() => {
 		const el = fontRef.current;
 		const myText = new SplitType(
-			"#my-text1"
+			"#my-text4"
 		);
 		gsap.to(".char", {
 			y: 0,
@@ -43,7 +43,7 @@ const AboutSection = () => {
 					<h1 className="text-lime-950 text-center font-semibold text-4xl ">
 						{" "}
 						<div
-							id="my-text1"
+							id="my-text4"
 							ref={fontRef}>
 							About Me
 						</div>

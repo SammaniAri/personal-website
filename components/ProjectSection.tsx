@@ -32,7 +32,7 @@ const projects = [
 	},
 
 	{
-		name: "A Simple Game inspired by Game of Thrones",
+		name: "An interactive Game inspired by 'Game of Thrones'",
 		description:
 			"I developed an interactive game using a public API that allows users to guess Game of Thrones characters within a given time limit. Utilized Firebase to store the scores after completion and displayed a leaderboard at the end of the game. Demonstrated  skills in API integration, game design, and data management through this project.",
 		image: "/api.jpg",

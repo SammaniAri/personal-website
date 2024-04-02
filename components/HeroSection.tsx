@@ -3,7 +3,6 @@
 import React from "react";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
-import AnimatedFont from "./AnimatedFont";
 import { motion } from "framer-motion";
 import {
 	useRef,
