@@ -6,19 +6,18 @@ import {
 	useRef,
 	useEffect,
 } from "react";
-import {
-	useForm,
-	ValidationError,
-} from "@formspree/react";
+ 
 import { gsap } from "gsap";
 import SplitType from "split-type";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const ContactSection = () => {
 	const fontRef = useRef(null);
 	useEffect(() => {
 		const el = fontRef.current;
 		const myText = new SplitType(
-			"#my-text1"
+			"#my-text3"
 		);
 		gsap.to(".char", {
 			y: 0,
@@ -33,7 +32,7 @@ const ContactSection = () => {
 			<div className="my-12 pb-12 md:pt-16">
 				<div
 					className="text-lime-950 text-center font-semibold text-4xl"
-					id="my-text1"
+					id="my-text3"
 					ref={fontRef}>
 					Contact Me
 				</div>
