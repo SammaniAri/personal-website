@@ -43,22 +43,28 @@ export default function RootLayout({
 		opacity: 0.2,
 	};
 	return (
-		<html lang="en">
-			{/*
+    <html lang="en">
+      {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-			<head />
-			<body>
-				{" "}
-				<ThemeProvider
-					enableSystem={true}
-					attribute="class">
-					{" "}
-					<Navbar />
-					{children}
-				</ThemeProvider>
-			</body>
-		</html>
-	);
+      <header>
+        <script
+          defer
+          data-domain="sammani.vercel.app"
+          src="https://plausible.io/js/script.js"></script>
+      </header>
+
+      <body>
+        {" "}
+        <ThemeProvider
+          enableSystem={true}
+          attribute="class">
+          {" "}
+          <Navbar />
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
 }
