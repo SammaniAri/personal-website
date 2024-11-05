@@ -1,19 +1,5 @@
 /** @format */
-"use client";
-import { useEffect } from "react";
-
 export default function Head() {
-  useEffect(() => {
-    var _mtm = (window._mtm = window._mtm || []);
-    _mtm.push({ "mtm.startTime": new Date().getTime(), event: "mtm.Start" });
-    var d = document,
-      g = d.createElement("script"),
-      s = d.getElementsByTagName("script")[0];
-    g.async = true;
-    g.src =
-      "https://cdn.matomo.cloud/sammanivercelapp.matomo.cloud/container_34RTo4JZ.js";
-    s.parentNode?.insertBefore(g, s);
-  }, []);
   return (
     <>
       <title>Sammani Ariyarathne</title>
@@ -29,28 +15,6 @@ export default function Head() {
         rel="icon"
         href="/favicon.ico"
       />
-
-      {/* Matomo Tracking Code */}
-
-      {/*
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            var _paq = window._paq || [];
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function() {
-              var u="https://sammanivercelapp.matomo.cloud/";
-              _paq.push(['setTrackerUrl', u + 'matomo.php']);
-              _paq.push(['setSiteId', '1']);
-              var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-              g.async = true; g.src = 'https://cdn.matomo.cloud/sammanivercelapp.matomo.cloud/matomo.js';
-              s.parentNode.insertBefore(g, s);
-            })();
-          `,
-          }}
-        />
-      */}
     </>
   );
 }
