@@ -48,12 +48,7 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <header>
-        <script
-          defer
-          data-domain="sammani.vercel.app"
-          src="https://plausible.io/js/script.js"></script>
-      </header>
+      <header></header>
 
       <body>
         {" "}

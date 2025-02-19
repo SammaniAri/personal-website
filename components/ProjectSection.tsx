@@ -8,7 +8,6 @@ import Link from "next/link";
 import SplitType from "split-type";
 import { useRef, useEffect } from "react";
 import { BsGithub, BsArrowRightSquare } from "react-icons/bs";
-
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,15 +30,6 @@ const projects = [
     link: "https://master--pokemon-generator-react-typescript.netlify.app/",
     technologies: " React, TypeScript, MUI, Netlify",
   },
-  /* {
-    name: "An e-commerce web app built in Vue.js",
-    description:
-      "I developed a single-page web application as an assessment for the last course at the vocational school, using a Canva prototype as a basis. This project enabled me to acquire key competencies in Vue.js and Vuetify. The app is responsive and acccebile and I achived the learning outcomes of the course through making this App.",
-    image: "/ecommerce.jpg",
-    github: "https://github.com/SammaniAri/ecommerce",
-    link: "https://ecommerce-jewellery.vercel.app/",
-    technologies: " Vue.js Vuetify ",
-  },*/
 
   {
     name: "A to-do app",
@@ -83,21 +73,6 @@ const ProjectSection = () => {
               <div key={idx}>
                 <div className="flex flex-col md:flex-row md:space-x-12">
                   <div className="md:w-1/2">
-                    {/*	<Link
-												href={
-													project.link
-												}
-												target="_blank">
-												<Image
-													src={
-														project.image
-													}
-													alt=""
-													width={1000}
-													height={1000}
-													className="rounded-xl shadow-xl hover:opacity-70 mb-8"
-												/>
-											</Link>  */}
                     {project.link ? (
                       <Link
                         href={project.link}

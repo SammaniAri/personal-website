@@ -3,11 +3,9 @@
 "use strict";
 import React from "react";
 import {
-	AiOutlineGithub,
-	AiOutlineTwitter,
-	AiOutlineLinkedin,
-	AiOutlineYoutube,
-	AiOutlineInstagram,
+  AiOutlineGithub,
+  AiOutlineLinkedin,
+  AiOutlineInstagram,
 } from "react-icons/ai";
 
 const Footer = () => {
