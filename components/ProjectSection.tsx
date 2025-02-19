@@ -18,7 +18,9 @@ const projects = [
       "I Developed a responsive e-commerce platform optimized for mobile devices,featuring dynamic UI for product listings, orders, and user profiles. Implemented state management and integrated secure authentication to enhance userexperience. Achieved cross-device compatibility and user interface responsiveness. Practised state management, responsive design, and Firebase's real-time capabilities for backend services.",
     image: "/pizza.jpg",
     github: "https://github.com/SammaniAri/PizzaRestaurant",
+    gitAria: "View the e-commerce web app project on GitHub",
     link: "https://react-pizza-restaurant-vert.vercel.app/",
+    websiteAria: "View the deployed e-commerce web app",
     technologies: " React, Firebase, Firestore, Tailwind CSS, Vercel",
   },
   {
@@ -27,7 +29,9 @@ const projects = [
       "This project is a React and TypeScript-based web application that allows users to explore Pokémon characters. Key functionalities include pagination, the Context API for seamless data flow across the app, dynamic routing with React Router, and a responsive design. This project highlights my skills in React, state management with Context API, asynchronous data fetching, and UI design using Material-UI.",
     image: "/poke.jpg",
     github: "https://github.com/SammaniAri/pokemon",
+    gitAria: "View Pokémon Explorer Web App project on GitHub",
     link: "https://master--pokemon-generator-react-typescript.netlify.app/",
+    websiteAria: "View the deployed Pokémon Explorer Web App web app",
     technologies: " React, TypeScript, MUI, Netlify",
   },
 
@@ -37,6 +41,7 @@ const projects = [
       "As part of a data interaction course at the vocational school, I successfully completed my first Full Stack project by developing a To-Do application. For the frontend development, I utilized React and Bootstrap to create a modern and intuitive user interface. On the backend, I used Express.js and Node.js to build a server-side application. These technologies enabled me to handle routing, API endpoints, and data management, ensuring communication between the frontend and backend components. For data storage, I used PostgreSQL.",
     image: "/todo.jpg",
     github: "https://github.com/orgs/project-on-data-interaction/repositories",
+    gitAria: "View the to-do app project on GitHub",
     link: "",
     technologies: " Express.js, Node.js, Bootstrap, PostgreSQL ",
   },
@@ -109,7 +114,8 @@ const ProjectSection = () => {
                     <div className="flex flex-row align-bottom space-x-4">
                       <Link
                         href={project.github}
-                        target="_blank">
+                        target="_blank"
+                        aria-label={project.gitAria}>
                         <BsGithub
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
@@ -119,7 +125,8 @@ const ProjectSection = () => {
                       {project.link && (
                         <Link
                           href={project.link}
-                          target="_blank">
+                          target="_blank"
+                          aria-label={project.websiteAria}>
                           <BsArrowRightSquare
                             size={30}
                             className="hover:-translate-y-1 transition-transform cursor-pointer"
